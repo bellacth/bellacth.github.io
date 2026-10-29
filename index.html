@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bella Chien — product, marketing, strategy, and consulting." />
+    <meta name="theme-color" content="#11110f" />
+    <title>Bella Chien</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=11" />
+    <script src="script.js?v=11" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a href="/" class="brand">bella chien</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">menu <span aria-hidden="true">+</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="/about-me/">about me</a>
+        <a href="/client-work/">client work</a>
+        <a href="/case-studies/">case studies</a>
+        <a href="/thought-bubbles/">thought bubbles</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero-frame" id="home" aria-labelledby="hero-title">
+        <div class="hero-sticky">
+          <div class="hero-lockup">
+            <h1 id="hero-title">Bella Chien</h1>
+            <p>Understanding the possibilities of technology and the realities of the people it serves.</p>
+          </div>
+
+          <div class="shoe-prompt" aria-hidden="true">
+            <span>Four pairs of shoes. Four ways of exploring the idea.</span>
+            <small>Hover a shoe. Click to find out more.</small>
+          </div>
+
+          <nav class="shoe-dock" aria-label="Explore Bella’s portfolio by shoe">
+            <a class="shoe-link shoe-client" href="/client-work/" aria-label="High heels — Client Work">
+              <span class="shoe-label">Client Work</span>
+              <span class="shoe-image-wrap"><img src="assets/dress-shoes-v2.png" alt="Black high heels" /></span>
+            </a>
+            <a class="shoe-link shoe-cases" href="/case-studies/" aria-label="Running shoes — Case Studies">
+              <span class="shoe-label">Case Studies</span>
+              <span class="shoe-image-wrap"><img src="assets/running-shoes-v2.png" alt="Cream running shoes" /></span>
+            </a>
+            <a class="shoe-link shoe-about" href="/about-me/" aria-label="Ballet flats — About Me">
+              <span class="shoe-label">About Me</span>
+              <span class="shoe-image-wrap"><img src="assets/ballet-shoes-v2.png" alt="Blush ballet flats" /></span>
+            </a>
+            <a class="shoe-link shoe-thoughts" href="/thought-bubbles/" aria-label="Flying shoes — Thought Bubbles">
+              <span class="shoe-label">Thought Bubbles</span>
+              <span class="shoe-image-wrap"><img src="assets/winged-shoes-v2.png" alt="Ivory and gold flying shoes" /></span>
+            </a>
+          </nav>
+          <a class="scroll-cue" href="#about" aria-label="Scroll to About Bella">
+            <span>Scroll to explore</span>
+            <i aria-hidden="true"><b></b></i>
+          </a>
+          <div class="hero-scanline" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="intro-frame" id="about" aria-labelledby="about-title">
+        <div class="intro-sticky">
+          <h2 id="about-title" class="word-flow">Hi, I’m Bella! I’m a student at the University of Southern California pursuing a BSc in Business Administration and an MS in Product Development Engineering.</h2>
+          <div class="intro-grid">
+            <figure class="portrait-wrap">
+              <img src="assets/photos/bella-headshot.jpg" alt="Bella Chien in a black suit at USC" />
+              <figcaption>USC / Los Angeles</figcaption>
+            </figure>
+            <p class="intro-copy">I work at the intersection of technology and strategy, analyzing how technology can solve business and human problems. My background spans product, marketing, and strategy consulting for organizations ranging from tech and manufacturing to infrastructure and hospitality. I enjoy working in complex and unfamiliar domains to solve ambiguous problems from fresh perspectives.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-frame" id="case-studies" aria-labelledby="work-title">
+        <div class="work-heading">
+          <div>
+            <h2 id="work-title">Select Work</h2>
+          </div>
+          <div class="carousel-controls" aria-label="Carousel controls">
+            <button class="carousel-button previous" type="button" aria-label="Previous projects">←</button>
+            <span class="carousel-status" aria-live="polite">01 — 04</span>
+            <button class="carousel-button next" type="button" aria-label="Next projects">→</button>
+          </div>
+        </div>
+
+        <div class="project-carousel" tabindex="0" aria-label="Selected project carousel">
+          <a class="project-tile client-tile" href="/client-work/#omni-hotels">
+            <div class="tile-media"><img src="/assets/projects/omni.webp" alt="Omni hotel at dusk" /><span>01</span><strong>OH</strong></div>
+            <div class="tile-info">
+              <p>Client Work</p>
+              <h3>Omni Hotels &amp; Resorts</h3>
+              <span>Food &amp; beverage revenue optimization.</span>
+            </div>
+          </a>
+          <a class="project-tile client-tile" href="/client-work/la-general-medical-center/">
+            <div class="tile-media"><img src="/assets/projects/la-general.jpeg" alt="LA General Medical Center campus" /><span>02</span><strong>LAG</strong></div>
+            <div class="tile-info">
+              <p>Client Work</p>
+              <h3>Los Angeles General Medical Center</h3>
+              <span>Patient-centric wayfinding system.</span>
+            </div>
+          </a>
+          <a class="project-tile product-tile" href="/case-studies/#vancouver-coastal-health">
+            <div class="tile-media"><img src="/assets/projects/vch.jpg" alt="Vancouver Coastal Health Richmond Hospital" /><span>03</span><strong>VCH</strong></div>
+            <div class="tile-info">
+              <p>Case Studies</p>
+              <h3>Vancouver Coastal Health</h3>
+              <span>AI-integrated contract management.</span>
+            </div>
+          </a>
+          <a class="project-tile product-tile" href="/case-studies/#central-pattana">
+            <div class="tile-media"><img src="/assets/covers/case-studies/central-pattana.jpg" alt="Central Pattana case presentation cover" /><span>04</span><strong>CPN</strong></div>
+            <div class="tile-info">
+              <p>Case Studies</p>
+              <h3>Central Pattana</h3>
+              <span>Reimagining centralwOrld for Gen Z.</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="more-work-cta">
+          <p>There’s more where these came from.</p>
+          <a href="/client-work/">Check out more work <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <a href="mailto:bellachi@usc.edu">email: bellachi@usc.edu</a>
+        <a href="https://www.linkedin.com/in/bella-chien">linkedin: www.linkedin.com/in/bella-chien</a>
+        <p>based in: los angeles, CA</p>
+      </div>
+      <div class="footer-name" aria-hidden="true">Bella Chien</div>
+    </footer>
+  </body>
+</html>
