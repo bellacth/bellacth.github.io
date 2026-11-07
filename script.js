@@ -1,3 +1,15 @@
+if (window.location.hostname === 'bellacth.github.io') {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-MXQYJZ681G');
+
+  const analyticsScript = document.createElement('script');
+  analyticsScript.async = true;
+  analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-MXQYJZ681G';
+  document.head.appendChild(analyticsScript);
+}
+
 const menuButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.site-nav');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -18,6 +30,16 @@ menu?.querySelectorAll('a').forEach((link) => {
 });
 
 const shoes = [...document.querySelectorAll('.shoe-link')];
+const shoeFrame = document.querySelector('.hero-frame');
+
+if (shoeFrame) {
+  const shoeObserver = new IntersectionObserver((entries, observer) => {
+    if (!entries[0]?.isIntersecting) return;
+    shoeFrame.classList.add('is-visible');
+    observer.disconnect();
+  }, { threshold: 0.18 });
+  shoeObserver.observe(shoeFrame);
+}
 
 shoes.forEach((shoe) => {
   const image = shoe.querySelector('img');
@@ -75,6 +97,7 @@ function clamp(value, min = 0, max = 1) {
 
 function updateWordFlow() {
   scrollTicking = false;
+  document.body.classList.toggle('nav-visible', window.scrollY > window.innerHeight * 0.62);
   if (hero && heroSticky) {
     const heroRect = hero.getBoundingClientRect();
     const heroTravel = Math.max(hero.offsetHeight - window.innerHeight, 1);

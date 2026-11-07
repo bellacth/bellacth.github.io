@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=11" />
-    <script src="script.js?v=11" defer></script>
+    <link rel="stylesheet" href="styles.css?v=12" />
+    <script src="script.js?v=12" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -28,16 +28,22 @@
     </header>
 
     <main id="main">
-      <section class="hero-frame" id="home" aria-labelledby="hero-title">
-        <div class="hero-sticky">
-          <div class="hero-lockup">
-            <h1 id="hero-title">Bella Chien</h1>
-            <p>Understanding the possibilities of technology and the realities of the people it serves.</p>
-          </div>
+      <section class="landing-frame" id="home" aria-labelledby="hero-title">
+        <div class="landing-lockup">
+          <h1 id="hero-title">Bella Chien</h1>
+          <p>Understanding the possibilities of technology and the realities of the people it serves.</p>
+        </div>
+        <a class="landing-scroll" href="#shoes">
+          <span>Scroll down</span>
+          <i aria-hidden="true">↓</i>
+        </a>
+      </section>
 
-          <div class="shoe-prompt" aria-hidden="true">
-            <span>Four pairs of shoes. Four ways of exploring the idea.</span>
-            <small>Hover a shoe. Click to find out more.</small>
+      <section class="hero-frame" id="shoes" aria-labelledby="shoe-title">
+        <div class="hero-sticky">
+          <div class="shoe-prompt">
+            <h2 id="shoe-title">Four pairs of shoes. Four ways of thinking.</h2>
+            <p>Hover a shoe. Click to find out more.</p>
           </div>
 
           <nav class="shoe-dock" aria-label="Explore Bella’s portfolio by shoe">
@@ -58,17 +64,13 @@
               <span class="shoe-image-wrap"><img src="assets/winged-shoes-v2.png" alt="Ivory and gold flying shoes" /></span>
             </a>
           </nav>
-          <a class="scroll-cue" href="#about" aria-label="Scroll to About Bella">
-            <span>Scroll to explore</span>
-            <i aria-hidden="true"><b></b></i>
-          </a>
           <div class="hero-scanline" aria-hidden="true"></div>
         </div>
       </section>
 
       <section class="intro-frame" id="about" aria-labelledby="about-title">
         <div class="intro-sticky">
-          <h2 id="about-title" class="word-flow">Hi, I’m Bella! I’m a student at the University of Southern California pursuing a BSc in Business Administration.</h2>
+          <h2 id="about-title" class="word-flow">Hi, I’m Bella! I’m a student at the University of Southern California pursuing a BSc in Business Administration and an MS in Product Development Engineering.</h2>
           <div class="intro-grid">
             <figure class="portrait-wrap">
               <img src="assets/photos/bella-headshot.jpg" alt="Bella Chien in a black suit at USC" />
@@ -127,6 +129,7 @@
         </div>
 
         <div class="more-work-cta">
+          <p>There’s more where these came from.</p>
           <a href="/client-work/">Check out more work <span aria-hidden="true">→</span></a>
         </div>
       </section>

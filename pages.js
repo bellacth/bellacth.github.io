@@ -1,3 +1,15 @@
+if (window.location.hostname === 'bellacth.github.io') {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-MXQYJZ681G');
+
+  const analyticsScript = document.createElement('script');
+  analyticsScript.async = true;
+  analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-MXQYJZ681G';
+  document.head.appendChild(analyticsScript);
+}
+
 const body = document.body;
 const menuButton = document.querySelector('.page-menu');
 const menu = document.querySelector('.page-nav');
